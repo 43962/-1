@@ -25,6 +25,8 @@ main {
   color: #fff;
   background-color: #ff9a4b;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .box-image1 {
   height: 150px;
