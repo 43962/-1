@@ -5,7 +5,6 @@
 }
 
 header {
-  width: 100%;
   height: 50px;
   background-color: #ff9a4b;
 }
@@ -16,10 +15,13 @@ main {
 }
 .box {
   width: 300px;
-  margin: 0 30px;
+  margin-right: 30px;
   padding: 10px;
   background-color: #eee;
   position: relative;
+}
+.box:last-child {
+  margin-right: 0;
 }
 .box-title {
   color: #fff;
@@ -51,7 +53,6 @@ main {
   margin-bottom: 5px;
 }
 footer {
-  width: 100%;
   height: 50px;
   background-color: #aaa;
 }
@@ -65,15 +66,17 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .box:nth-child(1) {
+  .box {
     width: 90%;
     margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  .box:nth-child(2) {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+
   .box:last-child {
-    width: 90%;
+    margin-bottom: 0;
+  }
+  footer {
+    width: 100%;
   }
 }
